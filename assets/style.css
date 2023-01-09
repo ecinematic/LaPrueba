@@ -1,5 +1,13 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(192, 245, 245);
+}
+
+p {
+    font-size: 2rem;
 }
 
 main {
@@ -7,13 +15,14 @@ main {
     margin: 0;
     display: flex;
     width: 100vw;
-    height: 50vh;
+    height: 25vh;
     justify-content: center;
     align-items: center;
 }
 
 header {
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-container {
@@ -26,10 +35,12 @@ header {
 }
 
 .btn {
-    background-color: purple;
+    background-color: rgb(118, 101, 118);
     color: white;
     border: 1px solid;
     border-radius: 5px;
+    padding: .25rem;
+    margin: .15rem;
 }
 
 .btn:hover {
@@ -37,6 +48,16 @@ header {
     color: black;
 }
 
-#question-container {
-    visibility: hidden;
+.start, .next {
+    font-size: 1rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
 }

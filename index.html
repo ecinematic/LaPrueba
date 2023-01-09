@@ -6,22 +6,26 @@
     </head>
     <body>
         <header>
-            <div class = "high-scores">View High Scores</div>
-            <p>Time:&nbsp</p>
-            <p id= "countdown"></p>
+            <div class = "high-scores">
+            <p>View High Scores</p>
+            </div>
+            <div class="timer">
+            <p>Time: <span id="countdown"></span></p>
+            </div>
         </header>
     <main>
      <div class="main-container">
-        <div id="question-container" class="hide"></div>
-        <div id="question">Question</div>
-        <div id="answers" class="btn-grid">
-            <button class="btn">Answer1</button>
-            <button class="btn">Answer2</button>
-            <button class="btn">Answer3</button>
-            <button class="btn">Answer4</button>
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answers" class="btn-grid">
+                <button class="btn ans">Answer1</button>
+                <button class="btn ans">Answer2</button>
+                <button class="btn ans">Answer3</button>
+                <button class="btn ans">Answer4</button>
+            </div>
         </div>
         <div class="controls">
-            <button id="start" class="start btn">Start</button>
+            <button id="start" class="start btn">Start Quiz</button>
             <button id="next" class="next btn hide">Next</button>
         </div>
      </div>
