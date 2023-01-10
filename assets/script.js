@@ -5,6 +5,7 @@ var nxQuestion = document.getElementById('next');
 startBtn.addEventListener('click', startQuiz);
 
 function startQuiz() {
+    console.log("test");
     document.getElementById('next').style.display = "block";
     document.getElementById('start').style.display = "none";
     document.getElementById('question-container').style.display = "block";
